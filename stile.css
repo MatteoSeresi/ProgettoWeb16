@@ -1,0 +1,16 @@
+html {
+    font-size: 17px;
+}
+
+.bg-old,
+body {
+    background: #cce6ff;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
+
+.active {
+    background: #b3d9ff !important;
+}
