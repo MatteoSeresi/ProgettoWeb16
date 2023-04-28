@@ -14,3 +14,63 @@ body {
 .active {
     background: #b3d9ff !important;
 }
+
+footer{
+	border-top: 1px solid #C99D66; /* primary-color */
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: #B3453E;/* primary color*/
+	color: #fff;
+}
+
+footer a{
+	color:#F0776C; /* secondary-color*/
+}
+
+footer a:hover{
+	color:#FF968C; /* light seconday color*/	
+}
+
+footer .credits {
+	max-width:300px;
+	margin:auto;
+}
+
+footer .credits a img {
+  -o-transition: opacity .2 ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease
+}
+
+footer .credits a img:hover {
+	opacity:0.6;
+}
+
+footer .social-cont .social-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:#F0776C; /* secondary-color*/
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:#FF968C; /* light seconday color*/		
+}
+	
