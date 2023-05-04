@@ -4,7 +4,7 @@ html {
 
 .bg-old,
 body {
-    background: #cce6ff;
+    background: #fffff6;
 }
 
 .fw-black {
@@ -12,7 +12,7 @@ body {
 }
 
 .active {
-    background: #b3d9ff !important;
+    background: #f8f8e0 !important;
 }
 
 footer{
