@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*
+body{
+    width: 1920px;
+}*/
+
+#column1{
+    width: 30%;
+    position: relative;
+    float: left;
+    background-color: green;
+    height: 700px;
+}
+
+#column2{
+    width: 40%;
+    position: relative;
+    float: left;
+    height: 700px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+#column3{
+    width: 30%;
+    position: relative;
+    float: left;
+    background-color: red;
+    height: 700px;
+}
+
+#high_c{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

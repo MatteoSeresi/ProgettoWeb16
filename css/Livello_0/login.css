@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*
+body{
+    width: 1920px;
+}*/
+
+#column1{
+    width: 30%;
+    position: relative;
+    float: left;
+    background-color: green;
+    height: 700px;
+}
+
+#column2{
+    width: 40%;
+    position: relative;
+    float: left;
+    background-color: white;
+    height: 700px;
+}
+
+#column3{
+    width: 30%;
+    position: relative;
+    float: left;
+    background-color: red;
+    height: 700px;
+}
