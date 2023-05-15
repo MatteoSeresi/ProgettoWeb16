@@ -1,14 +1,3 @@
-<div class="container-fluid container-lg my-3 mb-0 pb-3 border-bottom border-2 border-black">
-        <div class="row align-items-center justify-content-center">
-            <div class="col d-none d-lg-block">
-            </div>
-            <div class="col-12 col-lg-6 text-center">
-                <a href="home.html"><img src="../img/provaimg.jpg" style="width:500px; margin: auto;"></a>
-                <h1>TITOLO SITO</h1>
-            </div>
-            <div class="col d-none d-lg-block "> </div>
-        </div>
-</div>
         <nav class="sticky-top bg-old ">
             <div class="container-fluid container-lg p-0 border-bottom border-2 border-black">
                 <table class="table text-nowrap text-center m-0 fw-black" style="min-width: auto; width: auto; margin: auto!important;">
