@@ -15,6 +15,8 @@ body {
     background: #f8f8e0 !important;
 }
 
+/*FOOTER*/
+
 footer{
 	border-top: 1px solid #C99D66; /* primary-color */
 	text-align:center;
@@ -42,4 +44,22 @@ footer a{
 footer a:hover{
 	color:#FF968C;
 }
-	
+
+/*CONTATTACI*/
+#contact{
+	padding-top: 100px;
+    text-align: center;
+}
+
+#contact i{
+	padding-top: 10px;
+    margin-right: 5px;
+}
+
+#contact a{
+	text-decoration: none;
+}
+
+#contact img{
+    padding-top: 10px;
+}
