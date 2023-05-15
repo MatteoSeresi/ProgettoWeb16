@@ -8,10 +8,13 @@ Route::get('/', [PublicController::class, 'showCatalog1'])
         ->name('catalog1');
 
 
-Route::view('/where', 'where')
-        ->name('where');
+Route::view('/aziende', 'aziende')
+        ->name('aziende');
 
-Route::view('/who', 'who')
-        ->name('who');
+Route::view('/faq', 'faq')
+        ->name('faq');
+
+Route::view('/contattaci', 'contattaci')
+        ->name('contattaci');
 
 require __DIR__.'/auth.php';
