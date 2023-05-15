@@ -1,0 +1,45 @@
+html {
+    font-size: 17px;
+}
+
+.bg-old,
+body {
+    background: #fffff6;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
+
+.active {
+    background: #f8f8e0 !important;
+}
+
+footer{
+	border-top: 1px solid #C99D66; /* primary-color */
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: #B3453E;/* primary color*/
+	color: #fff;
+}
+
+footer{
+	border-top: 1px solid #C99D66;
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: #B3453E;
+	color: #fff;
+}
+
+footer a{
+	color:#F0776C;
+}
+	
+footer a:hover{
+	color:#FF968C;
+}
+	
