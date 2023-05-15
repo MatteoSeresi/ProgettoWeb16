@@ -7,6 +7,8 @@ use App\Http\Controllers\PublicController;
 Route::get('/', [PublicController::class, 'showCatalog1'])
         ->name('catalog1');
 
+Route::view('/home', 'home')
+        ->name('home');
 
 Route::view('/aziende', 'aziende')
         ->name('aziende');

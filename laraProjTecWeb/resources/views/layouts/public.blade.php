@@ -17,7 +17,14 @@
             <div class="col d-none d-lg-block "> </div>
         </div>
     </div>
-        
+
+    <div>
+        @include('layouts/_navpublic')
+    </div>
+
+    <div>
+        @yield('content')
+    </div>
 
     </body>
 </html>
