@@ -12,10 +12,7 @@ class PublicController extends Controller
     protected $_catalogModel;
 
     public function showHome() {
-
-        return view('home');
-        
-
+        return view('home');        
     }
 
 

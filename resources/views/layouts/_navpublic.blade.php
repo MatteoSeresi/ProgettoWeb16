@@ -20,7 +20,7 @@
                         <div class="vr"></div>
                     </td>
                     <td class="p-0">
-                        <a href="" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
+                        <a href="{{ route('catalogo') }}" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
                             CATALOGO
                         </a>
                     </td>
@@ -43,7 +43,7 @@
                         <div class="vr"></div>
                     </td>
                     <td class="p-0">
-                        <a href="" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
+                        <a href="{{ route('accedi') }}" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
                             ACCEDI
                         </a>
                     </td>
@@ -51,7 +51,7 @@
                         <div class="vr"></div>
                     </td>
                         <td class="p-0">
-                            <a href="" class="p-3 lh-1 d-block spa text-black text-decoration-none ">
+                            <a href="{{ route('registrazione') }}" class="p-3 lh-1 d-block spa text-black text-decoration-none ">
                                 REGISTRATI
                             </a>
                         </td>                                                             
