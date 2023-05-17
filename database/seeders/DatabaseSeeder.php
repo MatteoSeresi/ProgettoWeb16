@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder {
 
     public function run() {
 
-        DB::table('category')->insert([
+        /*DB::table('category')->insert([
             ['catId' => 1, 'name' => 'Computer', 'parId' => 0, 'desc' => 'Desktop, Laptop, Netbook'],
             ['catId' => 2, 'name' => 'Periferiche', 'parId' => 0, 'desc' => 'Hard Disk, Tastiere, Mouse'],
             ['catId' => 3, 'name' => 'Desktop', 'parId' => 1, 'desc' => 'Descrizione dei Prodotti Desktop'],
@@ -62,6 +62,15 @@ class DatabaseSeeder extends Seeder {
             ['name' => 'Mario', 'surname' => 'Rossi', 'email' => 'mario@rossi.it', 'username' => 'adminadmin',
                 'password' => Hash::make('adminadmin'), 'role' => 'admin', 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s")]
+        ]);*/
+
+        DB::table('companies')->insert([
+            ['id' => 1, 'P_Iva' => '12345678910', 'Ragione_Sociale' => 'Coal', 'Localizzazione' => 'Daje Roma Dajeeee 10', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+            ['id' => 2, 'P_Iva' => '11121314151', 'Ragione_Sociale' => 'Crai', 'Localizzazione' => 'Evviva Gesu 33', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+            ['id' => 3, 'P_Iva' => '61718192021', 'Ragione_Sociale' => 'Oasi', 'Localizzazione' => 'Piazza Roma 5', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+            ['id' => 4, 'P_Iva' => '22232425262', 'Ragione_Sociale' => 'Simply', 'Localizzazione' => 'Via Gianfranco 3', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+            ['id' => 5, 'P_Iva' => '72829303132', 'Ragione_Sociale' => 'Lidl', 'Localizzazione' => 'Via Gigio 14', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+            ['id' => 6, 'P_Iva' => '33343536373', 'Ragione_Sociale' => 'Eurospin', 'Localizzazione' => 'Via Franco 12', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
         ]);
     }
 
