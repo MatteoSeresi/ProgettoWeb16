@@ -42,7 +42,6 @@
             <img src="../../public/images/coup.jpg" alt="Coupon">
         </div>
     </div>
-
 </section>
 
 
