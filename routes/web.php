@@ -20,7 +20,7 @@ Route::view('/faq', 'faq')
 Route::view('/contattaci', 'contattaci')
         ->name('contattaci');
 
-Route::view('/accedi', 'accedi')
+Route::view('/accedi', 'login')
         ->name('accedi');
 
 Route::view('/registrtazione', 'registrazione')
