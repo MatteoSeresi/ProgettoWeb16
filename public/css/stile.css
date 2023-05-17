@@ -47,22 +47,60 @@ footer a:hover{
 
 /*CONTATTACI*/
 #contact{
-	padding-top: 100px;
-    text-align: center;
+	padding-top: 20px;
+}
+#contact h1{
+	text-align: center;
+}
+#contact #uni{
+    width:50%;
+    height: 445px;
+    display: inline-block;
+    padding-left: 16%;
 }
 
-#contact i{
-	padding-top: 10px;
-    margin-right: 5px;
+#contact #uni img{
+    width: 300px;
+    height: 300px;
+    position: relative;
 }
 
-#contact a{
-	text-decoration: none;
+#contact #uni a{
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+
 }
 
-#contact img{
-    padding-top: 10px;
+#contact #autori{
+    width: 40%;
+    height: 445px;
+    display: inline;
+    float:right;
 }
+
+#contact #autori h2{
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+}
+#contact #autori a{
+    font-size: 17px;
+    position: relative;
+    font-weight: bold;
+}
+#contact #autori p{
+    margin-bottom: 1%;
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+}
+#contact #autori button{
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+}
+
 
 /*AZIENDE*/
 #azienda{
@@ -101,6 +139,7 @@ footer a:hover{
     width: 75px;
     height: 75px;
     position: relative;
+    border: 1px solid gray;
     float: left;
 }
 
@@ -111,13 +150,48 @@ footer a:hover{
     height: 200px;
     border: 1px solid gray;
     border-radius: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
 }
 
 #azienda #end_c a{
     margin-top: 10px;
-    margin-right: 8%;
+    margin-right: 2%;
     float: right;
+}
+
+#azienda #end_c button{
+    margin-top: 10px;
+    margin-right: 2%;
+    float: right;
+}
+
+/*FAQ*/
+
+#faq{
+    padding-top: 20px;
+    
+}
+
+#faq h1{
+    text-align: center;
+}
+
+
+#faq #question h2{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 5px solid rgb(69, 175, 241);
+    background-color: rgb(224, 224, 224);
+    margin-bottom: 0%;
+}
+#faq #question p{
+    font-size: 20px;
+    text-align:justify;
+    border-left: none none none;
+    background-color: rgb(243, 241, 241);
+    margin-bottom: 0.5%;
+    
 }

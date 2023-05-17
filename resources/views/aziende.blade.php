@@ -25,7 +25,8 @@
         </div>
     </div>
     <div id="end_c">
-        <a href="" >Vai alle offerte</a>
+         <!--<a href="" >Vai alle offerte</a>-->
+         <button onclick="document.location=''">Vai alle offerte</button>
     </div>
 </section>
 
@@ -51,7 +52,8 @@
         </div>
     </div>
     <div id="end_c">
-        <a href="" >Vai alle offerte</a>
+        <!--<a href="" >Vai alle offerte</a>-->
+        <button onclick="document.location=''">Vai alle offerte</button>
     </div>
 </section>
 @endsection
