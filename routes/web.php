@@ -11,7 +11,7 @@ Route::get('/', [PublicController::class, 'showHome'])
 Route::view('/catalogo', 'catalogo')
         ->name('catalogo');
 
-Route::view('/aziende', 'aziende')
+Route::view('/aziende', [PublicController::class, 'showAziende'])
         ->name('aziende');
 
 Route::view('/faq', 'faq')
