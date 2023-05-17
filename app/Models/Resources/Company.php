@@ -2,9 +2,9 @@
 
 namespace App\Models\Resources;
 
-//use App\Models\Resources\Company;
+use Illuminate\Database\Eloquent\Model;
 
-class Company
+class Company extends Model
 {
     protected $table = 'companies';
 
@@ -12,6 +12,6 @@ class Company
 
     public function getAzienda()
     {
-        return Company::where('Ragione_Sociale', 'Coal')->get();
+        return Company::select('Ragione_Sociale')->get();
     }
 }
