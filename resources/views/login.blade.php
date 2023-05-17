@@ -17,7 +17,7 @@
                     <label>Password</label>
                 </div>
                 <button type="submit" class="loader border-0 bg-black text-white p-3 text-center fw-bold text-uppercase d-block w-100 mb-3 lh-1 rounded">accedi</button>
-                <a href="" class="text-black d-block spa">Se non sei ancora registrato crea il tuo account</a>
+                <a href="{{ route('registrazione') }}" class="text-black d-block spa">Se non sei ancora registrato crea il tuo account</a>
             </form>
         </div>
     </div>
