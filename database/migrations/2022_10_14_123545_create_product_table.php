@@ -17,7 +17,7 @@ class CreateProductTable extends Migration
             $table->bigIncrements('prodId');
             $table->string('name',25);
             $table->bigInteger('catId')->unsigned()->index();
-            $table->foreign('catId')->references('catId')->on('category');
+            //$table->foreign('catId')->references('catId')->on('category');
             $table->string('descShort',30);
             $table->string('descLong',2500);
             $table->float('price');
