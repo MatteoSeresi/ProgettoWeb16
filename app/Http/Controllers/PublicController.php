@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Company;
+use App\Models\Resources\Company;
 use Illuminate\Support\Facades\Log;
 
 
@@ -20,9 +20,9 @@ class PublicController extends Controller
     }
 
     public function showAziende() {
-        $aznd = Company::whereIn('Id', $id)
-        return view('aziende')
-                    ->with('aziende', $aznd);      
+        $aznd = $this->_companyModel->getAzienda();
+        return view('aziende');
+                    //->with('aziende', $aznd);     
     }
 
 

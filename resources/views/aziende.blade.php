@@ -3,12 +3,13 @@
 @section('title', 'Aziende')
 
 @section('content')
+<div>
     @isset($aziende)
-        foreach($aziende as $azienda)
+        @foreach($aziende as $azienda)
         <section id="azienda">
             <div id="high_c">
                 <img src="../../public/images/lebron.jpg" alt="immagine azienda">
-                <h1>Nome azienda: {{$azienda->Ragione_Sociale}}</h1>
+                <h1>Nome azienda: {{ $azienda->Ragione_Sociale }}</h1>
             </div>
             <div id="low_c">
                 <div id="slot">
@@ -32,4 +33,5 @@
         </section>
         @endforeach
     @endisset()
+</div>
 @endsection
