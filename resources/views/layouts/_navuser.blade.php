@@ -51,7 +51,7 @@
                         <div class="vr"></div>
                     </td>
                         <td class="p-0">
-                            <a href="{{ route('registrazione') }}" class="p-3 lh-1 d-block spa text-black text-decoration-none ">
+                            <a href="{{ route('home') }}" class="p-3 lh-1 d-block spa text-black text-decoration-none ">
                                 LOGOUT
                             </a>
                         </td>                                                             
