@@ -19,7 +19,8 @@
                 </div>
 
                 <div id="slot">
-                    <p>Questa è la descrizione dell'azienda</p>
+                    <h3>Descrizione:</h3>
+                    <p>{{ $azienda->Descrizione }}</p>
                 </div>
 
                 <div id="slot">
