@@ -58,7 +58,7 @@
                 </div>
                 
                 <button type="submit" class="my-3 loader border-0 bg-black text-white p-3 text-center fw-bold text-uppercase d-block w-100 mb-3 lh-1 rounded">salva modifiche</button>
-                
+                <a href="{{ route('user') }}" class="spa text-center text-black d-block">Indietro</a>
             </form>
         </div>
     </div>  
