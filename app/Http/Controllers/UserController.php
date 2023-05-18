@@ -8,4 +8,8 @@ class userController extends Controller {
         return view('user');
     }
 
+    public function modificaUtente() {
+        return view('user.usermodify');
+    }
+
 }

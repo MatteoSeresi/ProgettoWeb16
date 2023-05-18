@@ -32,4 +32,7 @@ Route::view('/registrtazione', 'registrazione')
 Route::get('/user', [UserController::class, 'index'])
         ->name('user');
 
+Route::get('/user/usermodify', [UserController::class, 'modificaUtente'])
+        ->name('usermodify');
+
 require __DIR__.'/auth.php';

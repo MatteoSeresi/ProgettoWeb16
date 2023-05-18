@@ -1,12 +1,12 @@
-@extends('layouts.public')
+@extends('layouts.userlayout')
 
-@section('title', 'Login')
+@section('title', 'Modifica Utente')
 
 @section('content')
 <section>
     <div class="row justify-content-center">
         <div class="col-12 col-lg-5">
-            <h2 class="fw-semibold mb-4 text-center">Nuovo utente</h2>
+            <h2 class="fw-semibold mb-4 text-center">Modifica i tuoi dati</h2>
             <form>
                 <div class="form-floating mb-3">
                     <input name="nome" type="text" class="form-control border-top-0 border-start-0 border-end-0 border-2 border-black  border-bottom-3 rounded-0 bg-transparent no-outline" placeholder="Nome" required="true">
@@ -56,42 +56,8 @@
                         <option value="2">Staff</option>
                     </select>
                 </div>
-
-                <!-- Checkbox
-                <h5>Sesso</h5>
-                <div class="row  g-2 mb-2">
-                    <div class="col-auto">
-                        <input type="checkbox" value="">
-                    </div>
-                    <div class="col-2">
-                        <p class="m-0 text-start">Maschio</p>
-                    </div>
-                    <div class="col-auto">
-                        <input type="checkbox" value="">
-                    </div>
-                    <div class="col-3">
-                        <p class="m-0 text-start" >Femmina</p>
-                    </div>
-                </div>    
                 
-                <h5>Tipo di utente</h5>
-                <div class="row  g-2 mb-2">
-                    <div class="col-auto">
-                        <input type="checkbox" value="">
-                    </div>
-                    <div class="col-2">
-                        <p class="m-0 text-start">Staff</p>
-                    </div>
-                    <div class="col-auto">
-                        <input type="checkbox" value="">
-                    </div>
-                    <div class="col-3">
-                        <p class="m-0 text-start" >Cliente</p>
-                    </div>
-                </div> -->
-                
-                <button type="submit" class="my-3 loader border-0 bg-black text-white p-3 text-center fw-bold text-uppercase d-block w-100 mb-3 lh-1 rounded">registrati</button>
-                <a href="{{ route('accedi') }}" class="spa text-center text-black d-block">Hai già un'account? Accedi</a>
+                <button type="submit" class="my-3 loader border-0 bg-black text-white p-3 text-center fw-bold text-uppercase d-block w-100 mb-3 lh-1 rounded">salva modifiche</button>
                 
             </form>
         </div>
