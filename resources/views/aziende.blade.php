@@ -7,7 +7,9 @@
         @foreach ($aziende as $azienda)
         <section id="azienda">
             <div id="high_c">
-                <img src="../../public/images/lebron.jpg" alt="immagine azienda">
+                <div id="immagine azienda">
+                    @include('helpers/aziendeImg', ['attrs' => 'imagefrm', 'imgFile' => $azienda->Logo])
+                </div>
                 <h1>Nome azienda: {{ $azienda->Ragione_Sociale }}</h1>
             </div>
             <div id="low_c">
