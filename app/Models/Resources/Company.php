@@ -12,6 +12,6 @@ class Company extends Model
 
     public function getAzienda()
     {
-        return Company::select('Ragione_Sociale')->get();
+        return Company::select()->get();
     }
 }
