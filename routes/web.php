@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\UserController;
 
 
 // Livello 0
@@ -27,5 +28,8 @@ Route::view('/registrtazione', 'registrazione')
         ->name('registrazione');
 
 //Livello1
+
+Route::get('/user', [UserController::class, 'index'])
+        ->name('user');
 
 require __DIR__.'/auth.php';

@@ -1,6 +1,6 @@
-@extends('layouts.public')
+@extends('layouts.userlayout')
 
-@section('title', 'Area User')
+@section('title', 'Area Utente')
 
 @section('content')
 <section id="us_ar">
