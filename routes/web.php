@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StaffController;
 
 
 // Livello 0
@@ -29,10 +30,14 @@ Route::view('/registrtazione', 'registrazione')
 
 //Livello1
 
-Route::get('/user', [UserController::class, 'index'])
+Route::get('/user', [UserController::class, 'userarea'])
         ->name('user');
 
 Route::get('/user/usermodify', [UserController::class, 'modificaUtente'])
         ->name('usermodify');
+
+//Livello2
+Route::get('/staff', [StaffController::class, 'staffarea'])
+        ->name('staff');
 
 require __DIR__.'/auth.php';

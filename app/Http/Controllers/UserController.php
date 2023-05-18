@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-class userController extends Controller {
+class UserController extends Controller {
 
-    public function index() {
+    public function userarea() {
         return view('user');
     }
 
