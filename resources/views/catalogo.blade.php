@@ -30,7 +30,6 @@
             <img src="../../public/images/coup.jpg" alt="Coupon">
         </div>
     </div>
-
     <div id="promo">
         <div id="left_c">
             <h2>Nome Coupon</h2>
