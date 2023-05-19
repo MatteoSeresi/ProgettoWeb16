@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->bigIncrements('ID_Offerta');
-            $table->string('Descrizione');
+            $table->string('Descrizione', 2500);
             $table->date('Scadenza');
             $table->text('Immagine')->nullable();
             $table->bigInteger('ID_Azienda')->unsigned()->index();
