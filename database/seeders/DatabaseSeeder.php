@@ -13,64 +13,28 @@ class DatabaseSeeder extends Seeder {
 
     public function run() {
 
-        /*DB::table('category')->insert([
-            ['catId' => 1, 'name' => 'Computer', 'parId' => 0, 'desc' => 'Desktop, Laptop, Netbook'],
-            ['catId' => 2, 'name' => 'Periferiche', 'parId' => 0, 'desc' => 'Hard Disk, Tastiere, Mouse'],
-            ['catId' => 3, 'name' => 'Desktop', 'parId' => 1, 'desc' => 'Descrizione dei Prodotti Desktop'],
-            ['catId' => 4, 'name' => 'Laptop', 'parId' => 1, 'desc' => 'Descrizione dei Prodotti Laptop'],
-            ['catId' => 5, 'name' => 'NetBook', 'parId' => 1, 'desc' => 'Descrizione dei Prodotti Netbook'],
-            ['catId' => 6, 'name' => 'HardDisk', 'parId' => 2, 'desc' => 'Descrizione dei Dischi Rigidi'],
-        ]);
-
-        DB::table('product')->insert([
-            ['name' => 'NetBook Modello2', 'catId' => 5,
-                'descShort' => 'Caratteristiche NetBook2', 'descLong' => self::DESCPROD,
-                'price' => 219.34, 'discountPerc' => 12, 'discounted' => 0, 'image' => ''],
-            ['name' => 'HardDisk Modello2', 'catId' => 6,
-                'descShort' => 'Caratteristiche HardDisk2', 'descLong' => self::DESCPROD,
-                'price' => 86.37, 'discountPerc' => 15, 'discounted' => 1, 'image' => 'Italy.gif'],
-            ['name' => 'Desktop Modello1', 'catId' => 3,
-                'descShort' => 'Caratteristiche Desktop1', 'descLong' => self::DESCPROD,
-                'price' => 1230.49, 'discountPerc' => 25, 'discounted' => 1, 'image' => 'Brazil.gif'],
-            ['name' => 'Laptop Modello1', 'catId' => 4,
-                'descShort' => 'Caratteristiche Laptop1', 'descLong' => self::DESCPROD,
-                'price' => 455.37, 'discountPerc' => 17, 'discounted' => 1, 'image' => ''],
-            ['name' => 'Laptop Modello2', 'catId' => 4,
-                'descShort' => 'Caratteristiche Laptop1', 'descLong' => self::DESCPROD,
-                'price' => 1889.67, 'discountPerc' => 15, 'discounted' => 1, 'image' => 'Argentina.gif'],
-            ['name' => 'Netbook Modello3', 'catId' => 5,
-                'descShort' => 'Caratteristiche NetBook3', 'descLong' => self::DESCPROD,
-                'price' => 259.99, 'discountPerc' => 17, 'discounted' => 0, 'image' => 'Red Apple.gif'],
-            ['name' => 'Laptop Modello3', 'catId' => 4,
-                'descShort' => 'Caratteristiche Laptop3', 'descLong' => self::DESCPROD,
-                'price' => 998.99, 'discountPerc' => 23, 'discounted' => 1, 'image' => 'UK.gif'],
-            ['name' => 'HardDisk Modello1', 'catId' => 6,
-                'descShort' => 'Caratteristiche HardDisk1', 'descLong' => self::DESCPROD,
-                'price' => 88.93, 'discountPerc' => 5, 'discounted' => 0, 'image' => 'USA.gif'],
-            ['name' => 'HardDisk Modello4', 'catId' => 6,
-                'descShort' => 'Caratteristiche HardDisk4', 'descLong' => self::DESCPROD,
-                'price' => 78.66, 'discountPerc' => 7, 'discounted' => 01, 'image' => 'Ukraine.gif']
-        ]);
-
-        DB::table('users')->insert([
-            ['name' => 'Alex', 'surname' => 'Verdi', 'email' => 'alex@verdi.it', 'username' => 'alexalex',
-                'password' => Hash::make('alexalex'), 'role' => 'user','created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s")],
-            ['name' => 'Marco', 'surname' => 'Bianchi', 'email' => 'marco@bianchi.it', 'username' => 'useruser',
-                'password' => Hash::make('useruser'), 'role' => 'user', 'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s")],
-            ['name' => 'Mario', 'surname' => 'Rossi', 'email' => 'mario@rossi.it', 'username' => 'adminadmin',
-                'password' => Hash::make('adminadmin'), 'role' => 'admin', 'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s")]
-        ]);*/
-
-        DB::table('companies')->insert([
+        /*DB::table('companies')->insert([
             ['id' => 1, 'P_Iva' => '12345678910', 'Ragione_Sociale' => 'Coal', 'Localizzazione' => 'Daje Roma Dajeeee 10', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
             ['id' => 2, 'P_Iva' => '11121314151', 'Ragione_Sociale' => 'Crai', 'Localizzazione' => 'Evviva Gesu 33', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
             ['id' => 3, 'P_Iva' => '61718192021', 'Ragione_Sociale' => 'Oasi', 'Localizzazione' => 'Piazza Roma 5', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
             ['id' => 4, 'P_Iva' => '22232425262', 'Ragione_Sociale' => 'Simply', 'Localizzazione' => 'Via Gianfranco 3', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
             ['id' => 5, 'P_Iva' => '72829303132', 'Ragione_Sociale' => 'Lidl', 'Localizzazione' => 'Via Gigio 14', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
             ['id' => 6, 'P_Iva' => '33343536373', 'Ragione_Sociale' => 'Eurospin', 'Localizzazione' => 'Via Franco 12', 'Descrizione' => 'Lorem Ipsum', 'Logo' => 'lebron.jpg'],
+        ]);*/
+
+        DB::table('registers')->insert([
+            ['ID_Registrato' => 1, 'Utente' => 'useruser', 'Password' => Hash::make('Yg4Xzxjb'), 'Nome' => 'Franco', 'Cognome' => 'Rossi', 'Genere' => 'Uomo', 'Tipo' => 'user', 'Email' => 'franco@rossi.it', 'Telefono' => '3333102759', 'Data_Nascita' => '1945/10/05'],
+            ['ID_Registrato' => 2, 'Utente' => 'staffstaff', 'Password' => Hash::make('Yg4Xzxjb'), 'Nome' => 'Adele', 'Cognome' => 'Bianchi', 'Genere' => 'Donna', 'Tipo' => 'staff', 'Email' => 'adele@bianchi.it', 'Telefono' => '3663102759', 'Data_Nascita' => '1994/08/10'],
+            ['ID_Registrato' => 3, 'Utente' => 'adminadmin', 'Password' => Hash::make('Yg4Xzxjb'), 'Nome' => 'LeBron', 'Cognome' => 'James', 'Genere' => 'Uomo', 'Tipo' => 'admin', 'Email' => 'lebron@james.it', 'Telefono' => '3493102759', 'Data_Nascita' => '2001/11/22'],
+        ]);
+
+        DB::table('offers')->insert([
+            ['ID_Offerta' => 1, 'Descrizione' => self::DESCPROD, 'Scadenza' => '1945/10/05', 'Immagine' => 'lebron.jpg', 'ID_Azienda' => 2],
+            ['ID_Offerta' => 2, 'Descrizione' => self::DESCPROD, 'Scadenza' => '2024/10/05', 'Immagine' => 'lebron.jpg', 'ID_Azienda' => 1],
+            ['ID_Offerta' => 3, 'Descrizione' => self::DESCPROD, 'Scadenza' => '2047/10/05', 'Immagine' => 'lebron.jpg', 'ID_Azienda' => 4],
+            ['ID_Offerta' => 4, 'Descrizione' => self::DESCPROD, 'Scadenza' => '2000/10/05', 'Immagine' => 'coup.jpg', 'ID_Azienda' => 1],
+            ['ID_Offerta' => 5, 'Descrizione' => self::DESCPROD, 'Scadenza' => '1492/10/12', 'Immagine' => 'lebron.jpg', 'ID_Azienda' => 5],
+            ['ID_Offerta' => 6, 'Descrizione' => self::DESCPROD, 'Scadenza' => '1789/07/14', 'Immagine' => 'lebron.jpg', 'ID_Azienda' => 6],
         ]);
     }
 
