@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Register;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+        return view('auth.registrazione');
     }
 
     /**
@@ -34,24 +34,24 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'surname' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'username' => ['required', 'string', 'min:8', 'unique:users'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'Nome' => ['required', 'string', 'max:255'],
+            'Cognome' => ['required', 'string', 'max:255'],
+            'Email' => ['required', 'string', 'email', 'max:255', 'unique:registers'],
+            'Utente' => ['required', 'string', 'min:8', 'unique:registers'],
+            'Password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $user = User::create([
-            'name' => $request->name,
-            'surname' => $request->surname,
-            'email' => $request->email,
-            'username' => $request->username,
-            'password' => Hash::make($request->password),
+        $register = Register::create([
+            'Nome' => $request->Nome,
+            'Cognome' => $request->Cognome,
+            'Email' => $request->Email,
+            'Utente' => $request->Utente,
+            'Password' => Hash::make($request->Password),
         ]);
 
-        event(new Registered($user));
+        event(new Registered($register));
 
-        Auth::login($user);
+        Auth::login($register);
 
         return redirect(RouteServiceProvider::HOME);
     }

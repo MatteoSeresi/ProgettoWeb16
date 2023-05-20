@@ -39,22 +39,30 @@
                         <a href="{{ route('contattaci') }}" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
                             CONTATTACI
                     </td>
+                    @guest
                     <td class="px-0">
                         <div class="vr"></div>
                     </td>
                     <td class="p-0">
-                        <a href="{{ route('accedi') }}" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
+                        <a href="{{ route('login') }}" class="p-3 lh-1 d-block spa type text-black text-decoration-none ">
                             ACCEDI
                         </a>
                     </td>
+                    @endguest
                     <td class="px-0">
                         <div class="vr"></div>
                     </td>
-                        <td class="p-0">
+                        <!-- <td class="p-0">
                             <a href="{{ route('registrazione') }}" class="p-3 lh-1 d-block spa text-black text-decoration-none ">
                                 REGISTRATI
                             </a>
-                        </td>                                                             
+                        </td> -->
+                    @auth
+                        <li><a href="" title="Esci dal sito" class="highlight" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                        </form>
+                    @endauth                                                           
                 </tr>
             </tbody>
         </table>         

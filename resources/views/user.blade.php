@@ -9,6 +9,7 @@
         
         <div id="col_2">
             <div id="dati">
+                <p>Benvenuto {{ Auth::user()->Nome }} {{ Auth::user()->Cognome }}</p>
                 <p>Nome: Mattia</p>
                 <p>Cognome: Sisi</p>
                 <p>Data di nascita: 01/07/2000</p>
