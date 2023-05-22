@@ -21,6 +21,10 @@ class Register extends Authenticatable
         'Email',
         'Utente',
         'Password',
+        'Tipo',
+        'Genere',
+        'Telefono',
+        'Data_Nascita',
     ];
 
     /**
@@ -41,7 +45,7 @@ class Register extends Authenticatable
     
     public function hasRole($role) {
         $role = (array)$role;
-        return in_array($this->role, $role);
+        return in_array($this->Tipo, $role);
     }
 
 }
