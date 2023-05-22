@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller {
          */
 //        return redirect()->intended(RouteServiceProvider::HOME);
 
-        $role = auth()->user()->Tipo;
+        $role = auth()->user()->role;
         switch ($role) {
             case 'staff': return redirect()->route('staff');
                 break;
