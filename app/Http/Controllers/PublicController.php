@@ -10,9 +10,11 @@ class PublicController extends Controller
 {
 
     protected $_companyModel;
+    protected $_offerModel;
 
     public function __construct() {
         $this->_companyModel = new Company;
+        $this->_offerModel = new Company;
     }
 
     public function showHome() {
@@ -25,6 +27,10 @@ class PublicController extends Controller
                     ->with('aziende', $aznd);
     }
 
-
+    public function showOffer() {
+        $cat = $this->_offerModel->getOfferta();    
+        return view('aziende')
+                    ->with('aziende', $off);
+    }
 
 }
